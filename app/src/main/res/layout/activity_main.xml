@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="-52dp">
+
+    <TextView
+        android:id="@+id/textrandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="28sp"
+        android:textStyle="bold"
+        />
+
+
+    <EditText
+        android:id="@+id/idEdtMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:hint="Type your message"
+        android:textAlignment="center"
+
+        tools:layout_editor_absoluteX="21dp" />
+
+    <Button
+        android:id="@+id/idBtnPassData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:text="Pass Data"
+        android:textAllCaps="false"
+
+        tools:layout_editor_absoluteX="21dp" />
+
+    <TextView
+        android:id="@+id/idTVHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/idEdtMsg"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="4dp"
+        android:text="Using putextra function "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="bold"
+
+        tools:layout_editor_absoluteX="21dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assignment4_#1213488"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#ff0125"
+        android:textSize="28sp"
+        android:textStyle="bold"
+         />
+
+
+    <TextView
+        android:id="@+id/calclabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator Application"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ff0125"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2">
+
+    <EditText
+        android:id="@+id/thefirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textAlignment="center"
+        android:hint="Input first number"
+
+        android:inputType="number"
+         />
+
+    <EditText
+        android:id="@+id/thesecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:textAlignment="center"
+        android:ems="10"
+        android:hint="Input second number"
+        android:inputType="number"
+         />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textSize="45sp"
+        />
+
+    <TextView
+        android:id="@+id/spinnerlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select calculator function from dopdown below"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginBottom="1dp"
+        android:textColor="#ff0125"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+    <Spinner
+        android:id="@+id/spSelect"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        >
+
+    <Button
+        android:id="@+id/btanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Solve"
+        android:layout_marginRight="25dp"
+        />
+
+
+    <Button
+        android:id="@+id/button_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Receiving Page"
+        />
+
+    </GridLayout>
+
+
+</LinearLayout>
